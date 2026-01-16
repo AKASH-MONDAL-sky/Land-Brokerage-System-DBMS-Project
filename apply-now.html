@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Application Button</title>
+  <link rel="stylesheet" href="./styles/apply-now.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Apply Button -->
+  <section class="apply-for-role">
+    <h2 id="apply-now-title">Broker হিসেবে আমাদের সাথে যুক্ত হন</h2>
+    <div class="description-about-role">
+
+      <div>
+        <h3>আমাদের Land Brokerage System Company–এ আপনাকে স্বাগতম।</h3>
+        <p>আপনি যদি একটি স্বচ্ছ, নির্ভরযোগ্য ও পেশাদার প্ল্যাটফর্মে Land Broker হিসেবে কাজ করতে আগ্রহী হন, তাহলে এখান
+          থেকেই আবেদন করুন।</p>
+      </div>
+
+      <div>
+        <h3>আপনার ভূমিকা</h3>
+        <p>একজন Land Broker হিসেবে আপনি জমি ক্রেতা ও বিক্রেতার মধ্যে সমন্বয় সাধন করবেন এবং নিরাপদ ও স্বচ্ছ লেনদেন
+          নিশ্চিত
+          করবেন।</p>
+      </div>
+
+
+      <div>
+        <h3>কেন আমাদের সাথে কাজ করবেন </h3>
+        <ul>
+          <li>বিশ্বস্ত ও ডিজিটাল ব্রোকারেজ প্ল্যাটফর্ম</li>
+          <li>শক্তিশালী ব্র্যান্ড ভ্যালু ও নেটওয়ার্ক</li>
+          <li>কমিশনভিত্তিক আকর্ষণীয় আয়</li>
+          <li>ডকুমেন্টেশন ও নীতিগত সাপোর্ট</li>
+          <li>দীর্ঘমেয়াদি ক্যারিয়ার গঠনের সুযোগ</li>
+        </ul>
+
+      </div>
+
+      <div>
+        <h3>যোগ্যতা</h3>
+        <ul>
+          <li>ন্যূনতম বয়স ১৮ বছর</li>
+          <li>জমি/রিয়েল এস্টেট সম্পর্কে প্রাথমিক ধারণা</li>
+          <li>সততা ও পেশাদার আচরণ</li>
+          <li>স্থানীয় এলাকার জমি সম্পর্কে জ্ঞান থাকলে অগ্রাধিকার</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>যোগ্যতা</h3>
+        <ul>
+          <li>ন্যূনতম বয়স ১৮ বছর</li>
+          <li>জমি/রিয়েল এস্টেট সম্পর্কে প্রাথমিক ধারণা</li>
+          <li>সততা ও পেশাদার আচরণ</li>
+          <li>স্থানীয় এলাকার জমি সম্পর্কে জ্ঞান থাকলে অগ্রাধিকার</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>এখনই আবেদন করুন</h3>
+        <p>আজই আবেদন করে আমাদের বিশ্বস্ত Land Brokerage Network–এর অংশ হয়ে উঠুন।</p>
+      </div>
+
+    </div>
+
+    <div>
+      <button class="apply-btn" id="openModal">
+        Apply Now
+      </button>
+    </div>
+  </section>
+
+  <!-- Modal Overlay -->
+  <div class="modal-overlay" id="modal">
+    <div class="modal">
+      <div class="modal-header">
+        <h3>Apply Now</h3>
+        <button class="close-btn" id="closeModal">✕</button>
+      </div>
+
+      <form id="applicationForm">
+        <div class="form-group">
+          <label>To</label>
+          <input type="email" value="admin@example.com" readonly />
+        </div>
+
+        <div class="form-group">
+          <label>From</label>
+          <input type="email" id="fromEmail" required placeholder="your@email.com" />
+        </div>
+
+
+
+        <div class="form-group">
+          <label>NID Number</label>
+          <input type="text" id="NIDNumber" required placeholder="your@email.com" />
+        </div>
+
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" id="phone" required placeholder="+880..." />
+        </div>
+
+        <div class="form-group">
+          <label>Subject</label>
+          <input type="text" id="subject" required value="Application for Property / Service" />
+        </div>
+
+        <div class="form-group">
+          <label>Message</label>
+          <textarea id="message" rows="6" required placeholder="Write your application message here..."></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Send Application</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="./JS/apply-now.js"></script>
+</body>
+
+</html>
