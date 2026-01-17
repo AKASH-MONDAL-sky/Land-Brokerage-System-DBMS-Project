@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Dashboard - Land Brokerage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/connection_admin.css" />
+</head>
+
+<body>
+
+  <!-- Dashboard (সরাসরি দেখাবে) -->
+  <div class="container" id="dashboard">
+    <h2 class="welcome-title">লগে আছি dot com এ, আপনাকে স্বাগতম!</h2>
+    <div class="dashboard-grid">
+      <!-- Chat with Admin -->
+      <div class="card">
+        <h3>Admin-এর সাথে যোগাযোগ করুন</h3>
+        <p class="note">আপনার প্রশ্ন/সমস্যা লিখুন। Admin শিগগিরই রিপ্লাই করবে।</p>
+        <div id="chatMessages" class="chat-messages"></div>
+        <input type="text" id="chatInput" placeholder="আপনার মেসেজ লিখুন..." />
+        <button class="send-btn" id="sendBtn">Send</button>
+      </div>
+
+      <!-- Select Broker -->
+      <div class="card">
+        <h3>Broker নির্বাচন করুন</h3>
+        <div class="broker-list">
+          <div class="broker-card">
+            <div class="broker-avatar">
+              <img src="./brokers/Tanvir.png" height="100%" width="100%" alt="">
+            </div>
+            <h4>Tanvir</h4>
+            <p>ঢাকা, উত্তরা<br>রেটিং: ★★★★☆</p>
+            <button class="select-btn" data-name="Tanvir">Select Broker</button>
+
+            <button class="details-btn" >
+              View Details
+            </button>
+          </div>
+          <div class="broker-card">
+            <div class="broker-avatar">
+              <img src="./brokers/Arpan.png" height="100%" width="100%">
+            </div>
+            <h4>Arpan</h4>
+            <p>ঢাকা, মিরপুর<br>রেটিং: ★★★★★</p>
+            <button class="select-btn" data-name="Arpan">Select Broker</button>
+            <button class="details-btn">
+              View Details
+            </button>
+          </div>
+
+
+          <div class="broker-card">
+            <div class="broker-avatar">
+              <img src="./brokers/Akash.png" width="100%" height="100%" alt="">
+            </div>
+            <h4>Akash</h4>
+            <p>চট্টগ্রাম<br>রেটিং: ★★★★☆</p>
+            <button class="select-btn" data-name="Akash">Select Broker</button>
+
+            <button class="details-btn">
+              View Details
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./JS/connection_admin.js"></script>
+</body>
+
+</html>
