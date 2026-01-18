@@ -22,7 +22,7 @@ body {
 
 /* Dashboard Grid */
 .dashboard-grid {
-  display: block; /* full width stacked for chat and broker */
+  display: block; 
   gap: 30px;
 }
 
@@ -57,10 +57,10 @@ body {
 /* Chat Section */
 .chat-messages {
   display: block;
-  width: 100%;
-  min-height: 320px;
+  width: 97%;
+  min-height: 315px;
   max-height: 400px;
-  overflow-y: auto;
+  
   border: 1px solid #cbd5e5;
   border-radius: 12px;
   padding: 18px;
@@ -68,7 +68,7 @@ body {
   background: #f1f5f9;
 }
 
-.message {
+/* .message {
   margin-bottom: 15px;
   padding: 12px 18px;
   border-radius: 18px;
@@ -78,7 +78,7 @@ body {
   font-size: 15px;
   line-height: 1.4;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-}
+} */
 
 .user-message {
   background: #2563eb;
@@ -133,9 +133,9 @@ body {
 /* Broker Section */
 
 .broker-list {
-  display: grid; /* grid layout for brokers */
-  grid-template-columns: repeat(2, 1fr); /* 2 columns per row */
-  gap: 20px; /* gap between cards */
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px; 
   width: 100%;
   margin-top: 15px;
 }
@@ -216,10 +216,10 @@ body {
 /* Responsive */
 @media (max-width: 900px) {
   .dashboard-grid {
-    display: block; /* stacked for smaller screens */
+    display: block; 
   }
   .broker-list {
-    grid-template-columns: 1fr; /* 1 column on mobile */
+    grid-template-columns: 1fr; 
   }
 }
 
