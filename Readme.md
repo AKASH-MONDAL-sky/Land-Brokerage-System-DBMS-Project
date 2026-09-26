@@ -100,7 +100,7 @@ scholargrid-full/
 
 Rust Sandbox (Layer 7 Drop-In Node)
 
-Safe algebraic evaluator used by API Nodes.
+Safe algebraic evaluator used by APIvdvhdvssxdhfhf Nodes.
 
 cd sandbox-rust
 cargo build --release
